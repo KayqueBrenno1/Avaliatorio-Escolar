@@ -34,9 +34,9 @@ public class AvaliatorioDoAluno {
         System.out.println("Perfeito, digite sua quarta nota: ");
         nota4 = leitor.nextDouble();
 
-        calcularDados();
+        calcularMedia();
     }
-    public void calcularDados(){
+    public void calcularMedia(){
         media = (nota1 + nota2 + nota3 + nota4) / 4;
 
         if (media >= 5){
