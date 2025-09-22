@@ -1,9 +1,8 @@
-package br.senai.sp.jandira.ds1t.avaliatorio.model;
+package br.senai.sp.jandira.avaliatorio.model;
 
-import java.awt.*;
 import java.util.Scanner;
 
-public class AvaliatorioDoAluno {
+public class Aluno {
 
     String nome;
     String situacao;
@@ -37,7 +36,8 @@ public class AvaliatorioDoAluno {
         calcularMedia();
     }
     public void calcularMedia(){
-        media = (nota1 + nota2 + nota3 + nota4) / 4;
+        double somaDasNotas = nota1 + nota2 + nota3 + nota4;
+        media = somaDasNotas / 4;
 
         if (media >= 5){
             situacao = "Aprovado";
