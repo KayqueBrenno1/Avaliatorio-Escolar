@@ -39,10 +39,12 @@ public class Aluno {
         double somaDasNotas = nota1 + nota2 + nota3 + nota4;
         media = somaDasNotas / 4;
 
-        if (media >= 5){
-            situacao = "Aprovado";
+        if (media >= 5) {
+            situacao = "Aprovação";
+        } else if (media < 3) {
+            situacao = "Reprovação";
         }else {
-            situacao = "Reprovado";
+            situacao = "Recuperação";
         }
         exibirResultados();
 
@@ -58,7 +60,7 @@ public class Aluno {
         System.out.println("Quarta nota: " + nota4);
         System.out.println("Média do aluno(a): " + mediaDecimal);
         System.out.println("----------------------------------------");
-        System.out.println("O(a) aluno(a) " + nome + " está " + situacao + "(a)");
+        System.out.println("O(a) aluno(a) " + nome + " está em " + situacao + ".");
 
     }
 }
